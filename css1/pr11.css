@@ -1,0 +1,20 @@
+#div1 {
+
+
+height: 300px;
+width: 500px;
+overflow-y: auto;
+
+}
+
+#div1 table{
+
+width: 600px;
+background-color: aqua;
+border: 3px solid blue;
+
+}
+td{
+
+    height: 60px;
+}

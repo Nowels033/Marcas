@@ -1,0 +1,33 @@
+.fuera{
+
+height: 100px;
+width: 25%;
+border: 4px solid black;
+background-color: rgb(255, 192, 247);
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.medio{
+    width: 50px;
+    height: 50px;
+    border: 4px solid black;
+background-color: rgb(205, 255, 192);
+display: flex;
+align-items: center;
+justify-content: center;
+position:relative;
+}
+
+.dentro{
+
+    width: 25px;
+    height: 25px;
+    border: 4px solid black;
+background-color: rgb(245, 11, 11);
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}

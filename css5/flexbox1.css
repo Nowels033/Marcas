@@ -1,0 +1,39 @@
+*{
+box-sizing: border-box;
+
+}
+
+.flex-conteiner{
+
+display: flex;
+/*flex-direction: row;
+flex-wrap: wrap-reverse;*/
+flex-flow: row nowrap;
+background-color: aqua;
+padding: 10px;
+border: 2px solid black;
+justify-content: space-around;
+height: 400px;
+
+
+
+}
+
+
+
+/*align-items: baseline;*/
+
+
+
+.flex-conteiner div {
+
+width: 100px;
+margin: 10px;
+background-color: blueviolet;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+border: 2px solid black;
+
+
+}

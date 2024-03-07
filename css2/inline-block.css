@@ -1,0 +1,36 @@
+a,span,strong,i,em{
+
+width: 100%;
+margin-top: 100px;
+margin-left: 100px;
+
+
+}
+
+input, textarea{
+    width: 100%;
+}
+h1,h2,h3{
+    background-color: aqua;
+    width: 200px;
+    margin-top: 40px;
+}
+
+.caja{
+
+
+    width: 33%;
+    display: inline-block;
+    box-sizing: content-box;
+
+}
+
+.contenedor{
+
+
+    width: 100%;
+    border: 2px solid green;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}

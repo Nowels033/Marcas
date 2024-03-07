@@ -1,0 +1,41 @@
+table{
+
+border: 5px solid red;
+border-collapse: collapse;
+width: 80%;
+}
+
+tr{
+    border: 3px solid blue;
+}
+
+td,th{
+    
+    border: 10px solid blue;
+    padding: 8px;
+    text-align: center;
+
+
+
+}
+
+th{
+    background-color: brown;
+    height: 50px;
+    font-size: 40px;
+}
+
+td {
+
+    height: 30px;
+    vertical-align: bottom;
+}
+
+tr:nth-child(even){
+
+    background-color: blueviolet;
+}
+tr:nth-child(odd){
+
+    background-color: rgb(43, 226, 73);
+}

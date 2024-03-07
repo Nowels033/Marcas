@@ -1,0 +1,97 @@
+p{
+text-align: center; /*para centrar el texto*/
+font-size: 50px; /*tamaño de la fuente*/
+font-family: 'Lucida Sans', 'Lucida Sans Regular'; /*elegir la fuente*/
+text-shadow: 3px 2px 2px blue; /*sombrear 1ºpx dcha-izq 2º up-down 3º */
+text-align-last: center; /*centrar el textola ultima línea*/
+text-decoration: underline; /*subrayar*/
+text-transform:capitalize; /*como se escribe cada palabra*/
+letter-spacing: 5px; /*separacion entre letras*/
+line-height: 0.9;  /*separacion de lineas*/
+background-image: url("./css.jpg"); /*poner una imagen de fondo*/
+background-repeat: no-repeat; /*que no se repita la imagen*/
+background-repeat: repeat-x; /*para que se repita en el eje de las x*/
+background-position: center; /*para centrar la imagen*/
+background-attachment: fixed; /*para fijar la imagen del fondo de la página*/
+border: 3px 3px black;  /*poner un cuadro*/
+/*border puede ser solid(linea), dotted(puntos), groove(), dashed(cuadros), double()
+ridge(), inset(), outset(), none(ninguno), hidden()*/
+width: 30px; /*ancho del cuadro*/
+height: 30px;/*altura del cuadro*/
+border-style: dotted; /*pone borde con puntitos*/
+border-width: 20px /*arriba*/ 10px/*derecha*/ 5px/*abajo*/ 2px/*izquierda*/;
+border-color: darkgoldenrod;
+border-right-style: dotted; /*aplicar distintos estilos*/
+border-radius: 5px; /*para redondear la esquina*/
+/*importar una fuete de googlefonts*/
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&family=Rubik+Burned&display=swap');
+h1{
+    font-family: 'Rubik Burned', system-ui;
+    color: blue;
+}
+p{
+    font-family: 'Princess Sofia', cursive; /*aquí se usa*/
+}
+margin-top: 50px;   /*separa 50px de la parte de arriba, si pone 50% ocupa la mitad de la ventana*/
+margin-bottom: 50px;/*separa 50px de la parte de abajo*/
+margin-left: 50px;  /*separa 50px de la parte de izq*/
+margin-right: 50px; /*separa 50px de la parte de dcha*/
+margin: 50px; /*afecta a todos los lados si solo se pone un valor*//*arriba dcha abajo izq*/
+padding: 20px;  /*padin -> separacion entre el texto y el margen*/
+}
+/*span agrupar cosas
+div agrupar bloques*/
+p span{ /*solo los span que estan dentro de un parrafo*/
+    font-size: 30px;
+}
+span{   /*para que afecte alos que estan fuera de los parrafos*/
+    font-size: 50px;
+}
+h1:hover,p:hover{ /*hover sirve para que cuando pase el raton por encima*/
+    color: blue;
+    background-color: cadetblue;
+}
+a:link{
+    color: green;
+}
+a:visited{
+    font-size: 30px;
+}
+a:hover{
+    color: chocolate;
+    font-size: 50px;
+}
+a:active{
+    color: crimson;
+}
+ul{
+    /*modificar el puntito de las listas*/
+    list-style-image: url('./sqpurple.gif');
+}
+ol{
+    /*con numeros*/
+    list-style-type:decimal ;
+    /**/
+    list-style-position: outside;
+}
+/*poner las filas impares de distinto color con odd y las pares con even*/
+tr:nth-child(even){
+    background-color: aquamarine;
+}
+#div1 {
+    height: 300px;
+    width: 500px;
+    /*barra scroll*/
+    overflow-x: auto; /*sólo aparece si lo necesita*/
+    overflow-y: scroll; /*obligas a que aparezca*/
+    float: left;/*cuadro flotante que se alinea a la izquierda*/
+}
+p{
+    /*sigo viebdo lo que sobra*/
+    overflow: visible;
+    /*visble(comosi bo se pusiese), hidden(lo que sobresale no se ve), 
+    scroll(muestra la barra de scroll), auto(sólo aparece la barra de scroll
+    si hace falta)*/
+    overflow-x:auto;/*afecta sólo al eje de las x*/
+    overflow-y: auto; /*afecta sólo al eje de las y*/
+}

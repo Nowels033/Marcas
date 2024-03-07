@@ -1,0 +1,7 @@
+div{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    background-image:linear-gradient(180deg, red,yellow);
+
+}

@@ -1,0 +1,32 @@
+h1:hover,p:hover{
+
+color: blueviolet;
+background-color: black;
+
+}
+
+a:link{
+
+color:green;
+
+
+}
+
+a:visited{
+
+font-size: 60px;
+color: blue;
+
+
+}
+a:hover{
+
+font-size: 50px;
+
+}
+
+a:active{
+
+color: yellow;
+
+}

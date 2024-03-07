@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="etiquetas.css"><!--hiperenlace a la pagina css-->
+</head>
+<body>
+    <p id="p"></p><!--identificador para modificar en css-->
+    <div></div><!--para hacer los bloques-->
+    <a href="#Seccion2">Ir a Seccion 2</a><!--poner salto a donde se encuentre elenlace-->
+    <a name="Seccion2"></a><!--es donde te lleva lo anterior-->
+    <!--con a se ponen los hiperenlaces-->
+    <a href="http://www.google.es" title="Busca con Goolgle">google</a>
+    <!--formulario-->
+    <form action="">
+        <fieldset><!--permite organizar en grupos los campos de un formulario-->
+            <legend>Datos personales</legend><!--título del primer apartado-->
+            <label for="nom">Nombre</label>
+            <input type="text" name="nombre" id="" placeholder="Introduzca aquí su nombre">
+            <!--estos 5 son ejemplos de internet-->
+            <input type="text">	<!--Muestra un campo de entrada de texto de una sola línea-->
+            <input type="radio">	<!--Muestra un botón de opción (para seleccionar una de las muchas opciones)-->
+            <input type="checkbox">	<!--Muestra una casilla de verificación (para seleccionar cero o más de muchas opciones)-->
+            <input type="submit">	<!--Muestra un botón de envío (para enviar el formulario)-->
+            <input type="button">	<!--Muestra un botón en el que se puede hacer clic-->
+            
+            <input type="text" maxlength="10"> <!--para el texto con un máximo de 10 caracteres-->
+            <input type="number" min="0" max="100"><!--para números-->
+            <br>
+            <label for="apell">Apellidos</label>
+            <input type="text" name="nombre" id="apellidos">
+        </fieldset>
+        <br>
+        <label for=" ">fecha nacimiento</label>
+        <input type="date" name="" id="">
+        <br>
+        <label for="email">email</label>
+        <br>
+        <input type="email" name="" id=""  placeholder="Introduzca aquí su email">
+        <br>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="" id="">
+        <br>
+        <label for="fich">Archivo</label>
+        <input type="file" name="" id="">
+        <br>
+        <label for="edad">Edad</label>
+        <input type="number" name="" id="">
+        <br>
+        <label for="altura">Atura</label>
+        <input type="number" name="" id="altura" step="0.1">
+        <br>
+        <label for="url">URL</label>
+        <input type="url" name="" id="" autofocus>
+        <br>
+        <label for="casilla">Casilla verificacion</label>
+        <input type="checkbox" name="" id="">
+        <br>
+        <label for="genero">Genero:</label>
+        <input type="radio" name="radio1" id="" checked>Hombre
+        <input type="radio" name="radio1" id="">Mujer
+        <input type="radio" name="radio1" id="">Otros
+        <br>
+        <input type="color" name="" id="" value="#ff0000">
+        <label for="rango"></label>
+        <input type="range" name="rango" id="" min="0" max="10" step="2">
+        <br>
+        <input type="hidden" name=""><!--solo es visible en el codigo para diferenciar codigos-->
+        <label for="sugerencias">sugerencias</label>
+        <textarea name="" id="" cols="20" rows="10" placeholder="Escribe" accesskey="s"></textarea><!--para crear un cuadro en el que se puede escribir-->
+        <br>
+        <label for="select">select:</label>
+        <select name="" id="" size="2" multiple>
+            <option value="uno">uno</option>
+            <option value="dos">dos</option>
+            <option value="tres">tres</option>
+        </select>
+        <input type="button" value="Enviar"><!-- creacion boton generico, se puede programar lo que quieres que haga-->
+        <input type="submit" value="Enviar datos"><!--Enviar datos-->
+        <input type="reset" value="Limpiar"><!--Limpia el formulario-->
+        <button type="submit">
+            <img src="enviar.png" alt="" width="50">
+        </button>
+        <button type="reset" disabled> <!--inabilita el campo-->
+            <img src="borrar.png" alt="" width="50">
+        </button>
+    </form>
+</body>
+</html>

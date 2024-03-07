@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+<form action="">
+    <fieldset>
+        <legend>DATOS</legend>
+    <label for="nom">Nombre:</label>
+    <input type="text" name="nombre" id="nom" placeholder="Introduzca aqui su nombre" tabindex="1">
+    <br>
+    <br>
+    <label for="apell">Apellidos</label>
+    <input type="text" name="apellidos" id="apell" placeholder="Introduzca aqui sus apellidos"required tabindex="3">
+    <br>
+    <br>
+    <label for="fech">Fecha nacimiento</label>
+    <input type="date" name="fecha de nacimiento" id="fech">
+    <br>
+    <br>
+    <label for="correo">Correo</label>
+    <input type="email" name="Correo" id="correo" placeholder="a que no me cambias" readonly tabindex="2">
+    <br>
+    <br>
+    <label for="pass">Contraseña</label>
+    <input type="password" name="contraseña" id="pass" tabindex="4">
+</fieldset>
+    <br>
+    <br>
+    <label for="fich">Archivo:</label>
+    <input type="file" name="Archivo" id="fich">
+    <br>
+    <br>
+    <label for="eda">Edad :</label>
+    <input type="number" name="edad" id="eda" tabindex="5">
+    <br>
+    <br>
+    <label for="altu">Altura</label>
+    <input type="number" name="" id="altu" step="0.01" accesskey="p">
+    <br>
+    <br>
+    <label for="url">URL</label>
+    <input type="url" name="url" id="url" autofocus tabindex="6">
+    <br>
+    <br>
+    <label for="casilla">Casilla de verificacion</label>
+    <input type="checkbox" name="verificacion" id="casilla" tabindex="7">
+    <br>
+    <br>
+    <label for="boton">Genero : </label>
+    <input type="radio" name="genero" id="boton">Hombre
+    <input type="radio" name="genero" id="boton" checked >Mujer
+    <input type="radio" name="genero" id="boton">Otros
+    <br>
+    <br>
+    <input type="color" name="col" id="col" value="#ff0000">
+    <br>
+    <br>
+    <label for="rango">Rango</label>
+    <input type="range" name="rango" id="" min="0" max="10" step="2">
+
+    <input type="hidden" name="">
+    <br><br>
+    <label for="sugerencias">sugerencias</label>
+    <textarea name="" id="sugerencias" cols="20" rows="10" placeholder="Escribe"></textarea>
+    <br><br>
+    <label for="select">select:</label>
+    <select name="" id="select" size="3" multiple>
+        <option value="">hombre</option>
+        <option value="">mujer</option>
+        <option value="" selected>otros</option>
+    </select>
+<br><br>
+    <input type="submit" value="Enviar">
+    <br><br>
+<input type="reset" value="RESETEAR">
+<br><br>
+<button type="submit">
+    <img src="./españa.png" alt="" width="45">
+</button>
+<button type="reset" disabled>
+    <img src="./borrar.jfif" alt="" width="45">
+</button>
+
+
+
+
+</form>
+    
+</body>
+</html>

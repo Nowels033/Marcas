@@ -1,0 +1,25 @@
+body{
+
+    background-image: url("./españa.png");
+    background-repeat: repeat-y;
+    background-position: left bottom;
+    background-attachment: fixed;
+    background-color: blueviolet;
+}
+
+.p1{
+
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: oblique;
+font-weight: bolder;
+font-size: 80px;
+background-image: url("./españa.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.p2{
+
+    font-family: cursive;
+    background-image: url("./españa.png");
+}

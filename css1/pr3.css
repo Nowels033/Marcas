@@ -1,0 +1,28 @@
+h1{
+
+border-style: dotted;
+border-width: 25px  ;
+border-color: blueviolet blue red yellow;
+border-radius: 10px 34px 5px 50px;
+
+text-align: center;
+
+}
+
+#p1{
+
+    border-style: dashed;
+    border-width: 20px;
+    border-width: thick;
+}
+
+#p2{
+
+border-top-style: dashed;
+border-right-style:dotted ;
+border-bottom-style:double ;
+border-left-style: hidden;
+border-width: 40px;
+border-color: aqua red blue yellow;
+
+}

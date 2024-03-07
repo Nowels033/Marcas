@@ -1,0 +1,225 @@
+
+
+li#a{
+color: blue;
+
+}
+li#b{
+
+}
+li#c {
+font-size: 25px;
+}
+li#d{
+    font-size: 30px;
+}
+
+li#e{
+    font-size: 35px;
+    color: blue;
+}
+#uno{
+    text-decoration: underline;
+    color: green;
+}
+#dos{
+    color: red;
+}
+#tres{
+
+    text-decoration: underline overline;
+}
+#cuatro{
+
+    font-size: 50px;
+}
+#cinco{
+
+    color : blue;
+    font-size: 20px;
+}
+#seis{
+
+    font-size: 20px;
+    color: red;
+    text-decoration: underline;
+}
+
+#siete{
+
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+#ocho{
+
+    text-transform: uppercase;
+text-align-last: center;
+
+}
+
+#nueve{
+
+  color: green;
+  letter-spacing: 10px;
+  line-height: 1.5; 
+
+}
+
+#negrita{
+
+    text-decoration: line-through;
+}
+
+#cuadrado1{
+
+    background-color: gray;
+    border: 10px 10 px;
+    width: 120px;
+    height: 60px;
+    box-shadow: -4px -4px  rgb(202, 199, 199);
+    text-align: center;
+}
+#cuadrado2{
+
+    background-color: gray;
+    border: 10px 10px;
+    width: 120px;
+    height: 60px;
+    box-shadow: -4px -4px 5px  rgb(53, 51, 51);
+    
+    text-align: center;
+}
+
+#cuadrado3{
+
+   
+        border: 10px ;
+        width: 120px;
+        height: 60px;
+        background-color: rgb(209, 205, 192);
+        box-shadow: -10px -10px 0px 10px  rgb(126, 121, 121);
+       
+        font-size: 35px;
+        text-align: center;
+    padding-top: 20px;
+}
+
+#frase{
+
+color: white;
+text-shadow: 3px 3px 6px  red;
+font-size: 25px;
+
+}
+
+#fuente{
+
+    font-family: 'Rubik Glitch Pop', system-ui;
+    color: green;
+}
+#fuente2{
+    color: yellow;
+    font-family: 'Rubik Glitch Pop', system-ui;
+}
+
+#odiocss
+{
+margin: auto;
+border-style:dotted;
+width: 150px;
+height: 100px;
+background-color:blueviolet;
+text-align: center;
+padding-top: 60px;
+
+
+}
+
+#bordea{
+    margin: auto;
+    background-color: gray;
+    color: whitesmoke;
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    padding-top: 60px;
+
+    border: 2px solid rgb(10, 10, 10);
+border-bottom-right-radius: 100px;
+
+
+}
+#bordeb{
+    margin: auto;
+    background-color: gray;
+    color: whitesmoke;
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    padding-top: 60px;  
+
+    border: 2px solid rgb(10, 10, 10);
+border-bottom-right-radius: 85px;
+
+}
+#bordec{
+    margin: auto;
+    background-color: gray;
+    color: whitesmoke;
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    padding-top: 60px; 
+
+    border: 2px solid rgb(10, 10, 10);
+border-bottom-right-radius: 55px;
+
+}
+#borded{
+    margin: auto;
+    background-color: gray;
+    color: whitesmoke;
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    padding-top: 60px; 
+    
+    border: 2px solid rgb(10, 10, 10);
+border-top-right-radius: 85px;
+border-bottom-left-radius: 85px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+
+    
+}
+#bordee{
+    margin: auto;
+    background-color: gray;
+    color: whitesmoke;
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    padding-top: 60px; 
+
+    border-top-right-radius: 20px;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+#bordef{
+    margin: auto;
+    background-color: gray;
+    color: whitesmoke;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    padding-top: 60px; 
+
+    border-top-right-radius: 90px;
+border-bottom-left-radius: 90px;
+border-top-left-radius: 90px;
+border-bottom-right-radius: 90px;
+
+
+}

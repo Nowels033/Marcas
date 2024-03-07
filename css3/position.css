@@ -1,0 +1,57 @@
+div{
+
+display: inline-block;
+height: 100px;
+width: 100px;
+border: 2px solid red;
+text-align: center;
+line-height: 100px;
+background-color: aqua;
+
+}
+
+.static {
+
+position: static;
+top: 20px;
+
+}
+
+.relative{
+
+position: relative;
+top: 40px;
+left: 20px;
+}
+
+.absolute{
+
+position: absolute;
+left:500px;
+top: 100px;
+
+}
+
+.fixed{
+
+position: fixed;
+top: 30px;
+left: 300px;
+
+}
+.contenedor{
+
+    height: 2000px;
+}
+.consticky{
+
+height: 10000px;
+
+}
+.sticky{
+
+    position: sticky;
+    left: 500px;
+    top: 10px;
+
+}
