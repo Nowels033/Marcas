@@ -1,0 +1,59 @@
+.divprincipal1{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    box-sizing: content-box; /* es la que cualquier caja tiene asignada
+    por defecto. Tiene el tamaño real de una caja; caja + margin + border + padding.
+    En el ejemplo anterior indicamos las medidas de la caja e ignora las dimenciones que señalamos*/
+}
+
+.divprueba{
+    border: 1px solid red;
+    padding: 10px;
+    width: 33%;
+    display: inline-block; /*Coloca los contenedores en linea mientras se ocupe el ancho
+    de la pantalla si se pasa da un salto de linea*/
+    font-size: 16px;
+}
+
+.divprincipal2{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    box-sizing: border-box; /* Recalcula el ancho de una caja para que el width sea
+     la estrictamente la suma de border +margin+ padding + ancho o altura que sea 
+     necesario para que se cumpla.*/
+}
+
+.divprueba2{
+    border: 1px solid red;
+    padding: 10px;
+    width: 33%;
+    display: block; /*Coloca los contenedores en linea mientras se ocupe el ancho
+    de la pantalla si se pasa da un salto de linea*/
+    font-size: 16px;
+}
+
+.divprincipal3{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    box-sizing: border-box; /* Recalcula el ancho de una caja para que el width sea
+     la estrictamente la suma de border +margin+ padding + ancho o altura que sea 
+     necesario para que se cumpla.*/
+}
+
+.divprincipal3 div{
+    border: 1px solid red;
+    padding: 10px;
+    width: 33%;
+    display: block; /*Coloca los contenedores en linea mientras se ocupe el ancho
+    de la pantalla si se pasa da un salto de linea*/
+    font-size: 16px;
+}
+
+.exp1{
+    /*margin-left: 36%;*/
+    margin: auto; /*centra el bloque*/
+    text-align: center; /*centra de forma horizontal y vertical el texto*/
+}

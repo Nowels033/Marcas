@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+        
+        <label for="genero">Género:</label><br>
+        <select id="genero" name="genero" required>
+          <option value="">Seleccionar</option>
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+        </select><br><br>
+        
+        <label>Opciones:</label><br>
+        <input type="checkbox" id="opcion1" name="opcion1" value="opcion1">
+        <label for="opcion1">Opción 1</label><br>
+        <input type="checkbox" id="opcion2" name="opcion2" value="opcion2">
+        <label for="opcion2">Opción 2</label><br>
+        <input type="checkbox" id="opcion3" name="opcion3" value="opcion3">
+        <label for="opcion3">Opción 3</label><br><br>
+        
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br><br>
+        
+        <label>Preferencias:</label><br>
+        <input type="radio" id="preferencia1" name="preferencia" value="preferencia1">
+        <label for="preferencia1">Preferencia 1</label><br>
+        <input type="radio" id="preferencia2" name="preferencia" value="preferencia2">
+        <label for="preferencia2">Preferencia 2</label><br>
+        <input type="radio" id="preferencia3" name="preferencia" value="preferencia3">
+        <label for="preferencia3">Preferencia 3</label><br><br>
+        
+        <label for="intereses">Intereses:</label><br>
+        <select id="intereses" name="intereses[]" multiple required>
+          <option value="deportes">Deportes</option>
+          <option value="musica">Música</option>
+          <option value="lectura">Lectura</option>
+          <option value="viajes">Viajes</option>
+          <option value="tecnologia">Tecnología</option>
+        </select><br><br>
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+      </form>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body{
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBUheN_Ru0jRZirX5CxRsAga1q-xmZrjMjYuunpdFFRk1d0qVIGceZEv7Auu_s-viEpRfs1kfcEPZBoJDIEoY1hDCu6Sm-l-nA_zhgh0pDK9QoL_P0WWmeJ5m_EhBnTthSslGi/s1600/muy+cerca+de+saturno+paisajes+del+espacio+y+planetas.jpg");
+    background-repeat: no-repeat;
+    position:absolute;
+    background-attachment: fixed; /*hace que la imagen no se mueva*/
+    background-size: cover;
+}
+
+.marg{
+    border-style: solid;
+    width: 800px;
+    margin-top: 70px; /*Espacio entre el parrafo y el h2 puden ser top- left- right- bottom*/ 
+    padding-left: 50px;/*el mismo caso que el margin*/
+}
+
+.marg2{
+    border: 20px double red;
+    border-top: dashed green;
+    width: 1100px;
+    margin: auto; /* Establece un margen central horizontalmente*/
+    padding: 25px; /*se establece un padding para todos los lados*/
+}
+
+a:link{
+    color: purple;
+}
+
+a:hover{
+    color: green;
+    text-transform: uppercase;
+    background-color: black;
+}
+
+a:visited{
+    color: blue;
+}
+
+.listas1{
+    list-style-type: square; /*circle, square, upper-roman, lower-alpha*/
+    border: 5px solid red;
+    list-style-position: inside;
+}
+
+.listas1 li{
+    border: 3px solid green ;
+}
+
+.listas2{
+    border: 5px solid red;
+    list-style-position: outside;
+    background-color: gray;
+}
+
+.listas2 li{
+    border: 3px solid green;
+    background-color: #fff;
+}
+
+.tablasdiv{
+    overflow-x: auto;
+}
+
+.tabla1{
+    border: 2px solid red;
+}
+
+.tabla1 thead{
+    border: 5px blue solid ;
+}
+
+.tabla1 tr{
+    
+}
+
+.tabla1 tr:nth-child(even){         /*colores acebrados*/
+    background-color: grey;
+}
+
+.tabla1 td{
+    text-align: center;
+    height: 50px;
+    vertical-align: center;
+    border: 5px blue solid;
+
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tema3.css">
+</head>
+<body>
+    <div class="divprincipal1">
+        <div class="divprueba">CAJA 1</div>
+        <div class="divprueba">CAJA 2</div>
+        <div class="divprueba">CAJA 3</div>
+
+        <div class="divprueba2">CAJA 1</div>
+        <div class="divprueba2">CAJA 2</div>
+        <div class="divprueba2">CAJA 3</div>
+    </div>
+    <hr>
+    <div class="divprincipal2">
+        <div class="divprueba2">CAJA 1</div>
+        <div class="divprueba2">CAJA 2</div>
+        <div class="divprueba2">CAJA 3</div>
+    
+        <div class="divprueba2">CAJA 1</div>
+        <div class="divprueba2">CAJA 2</div>
+        <div class="divprueba2">CAJA 3</div>
+    </div>
+        <hr>
+    <div class="divprincipal3">
+        <div>CAJA 1</div>
+        <div class="exp1">CAJA 2</div>
+        <div>CAJA 3</div>
+        
+        <div class="exp1">CAJA 1</div>
+        <div>CAJA 2</div>
+        <div>CAJA 3</div>
+    </div>
+    <hr>
+    <div>
+        Posiciones: static. Es el valor que toma un elemento por defecto para posicionarse. 
+        Con este valor,el elemento respetará el flujo normal de la página. Es decir, se posicionará 
+        en el lugar que le corresponde y no tendrá en cuenta valores para las propiedades top,
+        left, right y bottom. No se aplicaran cambios aunque se implementen con css.
+    </div>
+
+    <div>
+        Posiciones: relative. Se posiciona un elemento tomando como referencia el flujo normal 
+        (la posición por defecto) de dicho elemento. 
+        Podremos usar top, left, right y bottom para posicionar nuestro elemento tomando como referencia 
+        la posición por defecto del elemento. Aquí si aplica los cambios realizados en css.
+    </div>
+        Posiciones: fixed. Los elementos a los cuales se les posiciona con position:fixed también están
+        fuera del flujo normal de la página.
+        A diferencia de los position:absolute, éstos toman como referencia la
+        ventana del navegador y no respetan el tener un contenedor padre que esté
+        posicionado.
+        Al hacer scroll no se mueve.
+        
+    <div>
+        Posiciones: absolute. Este valor también aceptará los valores top, left, right y bottom.
+        El elemento con position: absolute no estará dentro del flujo normal de la página y tomará como
+        referencia la ventana del navegador o el elemento posicionado
+        (que tenga cualquier valor de position excepto static) más cercano si es padre del elemento que
+        queremos posicionar.        
+    </div>
+</body>
+</html>

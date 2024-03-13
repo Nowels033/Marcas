@@ -1,0 +1,74 @@
+div.bg {
+    background-color: #000;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+    color: white;
+    font-weight: 700;
+    font-size: 90px;
+    opacity: 0.5;
+}
+
+.bgcontenido{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center; /*pude cambiarse por text-align: "center, left, right, justify";*/
+    align-items: center;
+    background: red;
+    text-decoration: overline underline line-through; /*Demoración del texto*/
+}
+
+.bgimg{
+    width: 1%;
+    vertical-align: sub; /*pueden ser : baseline = default, text-top, text-bottom, sub, super*/
+
+}
+
+.upper{
+    border-style: dotted; /* pueden ser dotted, dashed, solid, double*/
+    text-transform: uppercase;
+    letter-spacing: 5px; /*espaciado entre letras*/
+    line-height: 5; /*espaciado entre lineas*/
+}
+
+.lower{
+    border-top-style: dashed;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    border-top-left-radius: 50px; /*una forma de hacer el radio de una esquina*/
+    font-style: oblique; /* pueden ser normal, italic, oblique*/
+    text-transform: lowercase;
+    letter-spacing: -2px;
+}
+
+.cap{
+    border-style: solid; /* establecemos el borde*/
+    border-radius: 10px 5px 15px 0px; /* indicamos los radios de cada esquina sup izquierda sup derecha inf derecga inf izqu*/
+    font-weight: bold; /* puede ser normal o bold*/
+    text-transform: capitalize;
+    line-height: 2.8;
+}
+
+.shadow{
+    text-shadow: 2px 2px 5px red;  /* primer y segundo valor horientación de la shadow, 3ero el efecto nublado y 4to el color*/
+}
+
+.positionshadow1{
+    text-shadow: -4px -4px grey;
+}
+
+.positionshadow2{
+    text-shadow: -4px -4px 5px black;
+}
+
+.positionshadow3{
+    text-shadow: -8px -9px black;
+}
+
+
