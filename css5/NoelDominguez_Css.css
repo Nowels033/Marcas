@@ -1,0 +1,77 @@
+.conteiner{
+
+    height: 300px;
+    width: 600px;
+    background-color: rgba(202, 187, 189, 0.637);
+}
+
+img{
+
+    height: 200px;
+    width: 200px;
+    margin-top: 45px;
+    margin-left: 30px;
+    flex-flow: nowrap;
+    justify-content: center;
+
+    
+
+}
+
+.circulo{
+
+    margin: auto;
+    background-color: rgb(194, 102, 26);
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    display: inline-flex;
+    margin-left: 10px;
+    justify-content: flex-end;
+    position: relative;
+    left: 340px;
+    top: -270px;
+    grid-row:  5 / span 1;
+    grid-column: 6 / span  1;
+    
+}
+
+div p{
+    color: black;
+    position: relative;
+    left: 340px;
+    top: -200px;
+    font-size: 30px;
+}
+
+.equis{
+
+ width: 30px;
+ height: 30px;
+ position: relative;
+ left: 540px;
+ top: -360px;
+ border: 3px solid black;
+ border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+ text-align: center;
+ padding-top: 5px;   
+}
+
+.dollar{
+position: relative;
+color: gray;
+}
+
+.dollar2{
+height: auto;
+width: auto;
+position: relative;
+left: 157px;
+top: -20px;
+}

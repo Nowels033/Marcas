@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="etiquetas.css"><!--hiperenlace a la pagina css-->
+</head>
+<body>
+    <p id="p"></p><!--identificador para modificar en css-->
+    <div></div><!--para hacer los bloques-->
+    <a href="#Seccion2">Ir a Seccion 2</a><!--poner salto a donde se encuentre elenlace-->
+    <a name="Seccion2"></a><!--es donde te lleva lo anterior-->
+    <!--con a se ponen los hiperenlaces-->
+    <a href="http://www.google.es" title="Busca con Goolgle">google</a>
+    <a id="enlace" target="_blank" href="http://www.queenonline.com">www.queenonline.com</a><!--añadir enlace, blank para abrir en una pestaña nueva-->
+    <!--formulario-->
+    <form action="">
+        <fieldset><!--permite organizar en grupos los campos de un formulario-->
+            <legend>Datos personales</legend><!--título del primer apartado-->
+            <label for="nom">Nombre</label>
+            <input type="text" name="nombre" id="" placeholder="Introduzca aquí su nombre">
+            <!--estos 5 son ejemplos de internet-->
+            <input type="text">	<!--Muestra un campo de entrada de texto de una sola línea-->
+            <input type="radio">	<!--Muestra un botón de opción (para seleccionar una de las muchas opciones)-->
+            <input type="checkbox">	<!--Muestra una casilla de verificación (para seleccionar cero o más de muchas opciones)-->
+            <input type="submit">	<!--Muestra un botón de envío (para enviar el formulario)-->
+            <input type="button">	<!--Muestra un botón en el que se puede hacer clic-->
+            
+            <input type="text" maxlength="10"> <!--para el texto con un máximo de 10 caracteres-->
+            <input type="number" min="0" max="100"><!--para números-->
+            <br>
+            <label for="apell">Apellidos</label>
+            <input type="text" name="nombre" id="apellidos">
+        </fieldset>
+        <br>
+        <label for=" ">fecha nacimiento</label>
+        <input type="date" name="" id="">
+        <br>
+        <label for="email">email</label>
+        <br>
+        <input type="email" name="" id=""  placeholder="Introduzca aquí su email">
+        <br>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="" id="">
+        <br>
+        <label for="fich">Archivo</label>
+        <input type="file" name="" id="">
+        <br>
+        <label for="edad">Edad</label>
+        <input type="number" name="" id="">
+        <br>
+        <label for="altura">Atura</label>
+        <input type="number" name="" id="altura" step="0.1">
+        <br>
+        <label for="url">URL</label>
+        <input type="url" name="" id="" autofocus>
+        <br>
+        <label for="casilla">Casilla verificacion</label>
+        <input type="checkbox" name="" id="">
+        <br>
+        <label for="genero">Genero:</label>
+        <input type="radio" name="radio1" id="" checked>Hombre
+        <input type="radio" name="radio1" id="">Mujer
+        <input type="radio" name="radio1" id="">Otros
+        <br>
+        <input type="color" name="" id="" value="#ff0000">
+        <label for="rango"></label>
+        <input type="range" name="rango" id="" min="0" max="10" step="2">
+        <br>
+        <input type="hidden" name=""><!--solo es visible en el codigo para diferenciar codigos-->
+        <label for="sugerencias">sugerencias</label>
+        <textarea name="" id="" cols="20" rows="10" placeholder="Escribe" accesskey="s"></textarea><!--para crear un cuadro en el que se puede escribir-->
+        <br>
+        <label for="select">select:</label>
+        <select name="" id="" size="2" multiple>
+            <option value="uno">uno</option>
+            <option value="dos">dos</option>
+            <option value="tres">tres</option>
+        </select>
+        <input type="button" value="Enviar"><!-- creacion boton generico, se puede programar lo que quieres que haga-->
+        <input type="submit" value="Enviar datos"><!--Enviar datos-->
+        <input type="reset" value="Limpiar"><!--Limpia el formulario-->
+        <button type="submit">
+            <img src="enviar.png" alt="" width="50">
+        </button>
+        <button type="reset" disabled> <!--inabilita el campo-->
+            <img src="borrar.png" alt="" width="50">
+        </button>
+    </form>
+    <!--nuevas etiquetas 07/03/2024-->
+    <div class="degradado"></div>
+    <div>
+        <img class="imFloat" src="./bitcoin.jpg" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam aperiam assumenda exercitationem voluptate blanditiis! Facilis, rem quia? Sed atque nulla voluptas sapiente, odio vero, error veritatis a enim praesentium harum!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem inventore excepturi earum nam repudiandae vero quam delectus adipisci accusamus enim totam, ducimus optio blanditiis commodi debitis quae facere ipsam a!</p>
+    </div>
+    <!--inline-block-->
+    <h1>Elementos inline</h1>
+    <a href="https://www.google.es">a</a>
+    <span>span</span>
+    <strong>strong</strong>
+    <i>italica</i>
+    <em>pone como cursiva</em>
+    <input type="date" name="" id="">
+    <input type="text">
+    <textarea name="" id="" cols="30" rows="10">textarea</textarea>
+    <!--text crea un cuadro de texto de varias líneas en una página web 
+    inline (pone en linea los elementos)-->
+    <!-- block(un sólo bloque)-->
+    <h1>Elementos block</h1>
+    <div>div</div>
+    <p>p</p>
+    <h1>h1</h1><h2>h2</h2><h3>h3</h3>
+
+    <h1>Elementos inline-block</h1>
+    <div class="caja">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta animi ea fugiat in officiis nam illum aliquam quod numquam. Aspernatur adipisci iure placeat error accusantium quibusdam obcaecati excepturi dolorem est?</div>
+    <div class="caja">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores quibusdam deserunt odit amet laboriosam illum eveniet accusantium obcaecati neque et repellat doloremque perspiciatis temporibus natus, autem corporis voluptate. Voluptate, delectus?</div>
+    <div class="caja">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam eaque ratione atque ipsa in nostrum sunt! Qui soluta sunt sed vitae, ipsa minus totam! Perferendis facere commodi architecto exercitationem.</div>
+
+    <h1>Centrado</h1>
+    <div class="contenedor">Texto centrado</div>
+    <!--position-->
+    <div class="contenedor1">
+        <div class="static">static</div>
+        <div class="relative">relative</div>
+        <div class="absolute">absolute</div>
+        <div class="fixed">fixed</div>
+        <div class="contsticky">
+        <div class="sticky">sticky</div>
+        </div>
+        <div class="a1"></div>
+    </div>
+    <!--cssgrid-->
+    <div class="gridcontainer">
+        <div class="it1">1</div>
+        <div class="it2">2</div>
+        <div class="it3">3</div>
+        <div class="it4">4</div>
+        <div class="it5">5</div>
+    </div>
+    <!--flexbox-->
+    <div class="flexcontainer">
+        <div style="flex-shrink: 0; order: 4; background-color: brown;">1</div>
+        <!--mantine un tamaño minimo-->
+        <div style="flex-basis: 200px; order: 3; background-color: blueviolet;">2</div>
+        <!--ajustar a la medida dada-->
+        <div style="flex-grow: 1; order: 1; background-color: palegreen;">3</div>
+        <!--da un tamaño-->
+        <div style="flex-grow: 10; order: 2; background-color: orange;">4</div>
+        <div style="flex-shrink: 0; background-color: brown;">1</div>
+        <!---->
+        <div style="flex-grow: 20; background-color: blueviolet;">2</div>
+        <div style="flex-grow: 1; background-color: palegreen;">3</div>
+        <div style="flex-grow: 10; background-color: orange;">4</div>
+    </div>
+</body>
+</html>
