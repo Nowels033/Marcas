@@ -1,0 +1,72 @@
+.divmain{
+    padding: 10px;
+    background-color: beige;
+    display: flex;
+    width: 780px;
+    height: 300px;
+    margin: auto;
+    justify-content: space-between;
+    display:flexbox;
+}
+
+.divimg{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.divimg img{
+    height: 220px
+}
+
+.textodiv{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    justify-content:flex-end;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 50px;
+    
+}
+
+.divx{
+    margin-top: 20px;
+    margin-right: -260px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    text-align: justify;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.divprecio{
+    font-size: 35px;
+    color: gray;
+    display: block;
+    position: relative;
+    top: 100px;
+    right: -140px;
+}
+
+.divcirculos{
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+     column-gap: 10px; 
+     row-gap: 0px;  
+    position: relative;
+    top: 150px;
+    right: 160px;
+
+
+}
+
+.circulos{
+    border: 2px solid #000;
+    border-radius: 25px;
+    height: 35px;
+    width: 35px;
+    background-color: sandybrown;
+}
