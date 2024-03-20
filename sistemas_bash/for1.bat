@@ -1,0 +1,4 @@
+@echo OFF
+
+for %%i in (????) do  if 
+
