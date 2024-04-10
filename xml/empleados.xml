@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="empleados.css" type="text/css"?>
+<empleados>
+    <empleado>
+        <nombre>
+            Noel
+        </nombre>
+        <apellido>
+            Lopez
+        </apellido>
+        <edad>
+            20
+        </edad>
+        <puesto>
+            Gerente
+        </puesto>
+    </empleado>
+
+    <empleado>
+        <nombre>
+            Juan
+        </nombre>
+        <apellido>
+            Perez
+        </apellido>
+        <edadd>
+            21
+        </edadd>
+        <puesto>
+            Director
+        </puesto>
+    </empleado>
+
+    <empleado>
+        <nombre>Maria</nombre>
+        <apellido>Lopez</apellido>
+        <edad> 22 </edad>
+        <puesto>supervisor </puesto>
+    </empleado>
+
+</empleados>

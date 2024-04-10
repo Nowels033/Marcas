@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Clubes_de_futbol>
+
+    <club>
+        <nombre>Real Madrid</nombre>
+        <ciudad>Madrid</ciudad>
+
+        <estadio>Estadio Bernabeu</estadio>
+        <capacidad>81044</capacidad>
+        <entrenador>Zinedine Zidane</entrenador>
+        <jugadores>
+            <jugador posicion="delantero">
+                <nombre >Cristiano Ronaldo</nombre>
+                <nacionalidad>
+                    Portugal
+                    Lisboa
+                </nacionalidad>
+            </jugador>
+            <jugador posicion="delantero">
+                <nombre >Karim Benzema</nombre>
+                <nacionalidad>
+                                Francia
+                                Paris
+                            </nacionalidad>
+                </jugador>
+        </jugadores>
+
+    </club>
+    <club>
+        <nombre>Barcelona</nombre>
+        <ciudad>Barcelona</ciudad>
+        <estadio>Estadio Camp Nou</estadio>
+        <capacidad>99354</capacidad>
+        <entrenador>Jose Mourinho</entrenador>
+        <jugadores>
+            <jugador posicion="delantero">
+                <nombre >Lionel Messi</nombre>
+                <nacionalidad>
+                                Argentina
+                                Buenos Aires
+                            </nacionalidad>
+            </jugador>
+            <jugador posicion="centrocampista">
+                <nombre >Sergio Busquets</nombre>
+                <nacionalidad>
+                                España
+                                Barcelona
+                            </nacionalidad>
+            </jugador>
+        </jugadores>
+    </club>
+
+
+
+</Clubes_de_futbol>
