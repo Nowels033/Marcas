@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumno [
+    <!ELEMENT alumno (nombre,fecha_de_nacimiento,ciudad)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT fecha_de_nacimiento (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+]>
+<alumno>
+   <nombre>Ana</nombre>
+   <fecha_de_nacimiento>2-2-2002</fecha_de_nacimiento>
+   <ciudad>Barcelona</ciudad>
+</alumno>

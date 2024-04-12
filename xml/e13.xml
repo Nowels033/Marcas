@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE localidades [
+    <!ELEMENT localidades (provincia)*>
+    <!ELEMENT provincia (#PCDATA | ciudad |codigo_postal)*>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT codigo_postal (#PCDATA)>
+
+
+    
+]>
+<localidades>
+   <provincia>
+      León
+      <ciudad>Astorga</ciudad>
+      <codigo_postal>24124</codigo_postal>
+      <ciudad>Ponferrada</ciudad>
+   </provincia>
+   <provincia>
+      Asturias
+      <codigo_postal>03003</codigo_postal>
+   </provincia>
+</localidades>

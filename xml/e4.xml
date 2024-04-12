@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumno [
+    <!ELEMENT alumno ANY>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+]>
+<alumno>
+   <nombre>Ana</nombre> vive en <ciudad>Madrid</ciudad>.
+</alumno>

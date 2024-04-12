@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pais [
+    <!ELEMENT pais (nombre,continente) >
+    <!ELEMENT nombre (#PCDATA) >
+    <!ELEMENT continente (#PCDATA)>
+]>
+
+<pais>
+  <nombre>Portugal</nombre>
+  <continente>Europa</continente>
+</pais>

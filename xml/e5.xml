@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE etiquetas_html [
+    <!ELEMENT etiquetas_html (br)>
+    <!ELEMENT br EMPTY>
+    <!ATTLIST br
+        descripcion CDATA #REQUIRED>
+    
+    
+]>
+<etiquetas_html>
+   <br descripcion="salto de linea"/>
+</etiquetas_html>

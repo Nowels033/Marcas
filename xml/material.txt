@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pais>Portugal</pais>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<pais>
+  <nombre>Portugal</nombre>
+  <continente>Europa</continente>
+</pais>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno>
+   <nombre>Ana</nombre>
+   <mayor_de_edad/>
+   <ciudad>Madrid</ciudad>
+</alumno>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno>
+   <nombre>Ana</nombre> vive en <ciudad>Madrid</ciudad>.
+</alumno>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<etiquetas_html>
+   <br/>
+</etiquetas_html>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<capitulo>
+   <contenido_cualquiera>
+      <texto>Texto1</texto>
+      <texto>Texto2</texto>
+      <texto>Texto3</texto>
+   </contenido_cualquiera>
+</capitulo>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<capitulo>
+   <texto>Elemento únicamente con caracteres.</texto>
+</capitulo>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno>
+   <nombre>Ana</nombre>
+   <fecha_de_nacimiento>2-2-2002</fecha_de_nacimiento>
+   <ciudad>Barcelona</ciudad>
+</alumno>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno>
+   <nombre>Ana</nombre>
+   <fecha_de_nacimiento>
+      <dia>2</dia>
+      <mes>2</mes>
+      <anio>2002</anio>
+   </fecha_de_nacimiento>
+   <ciudad>Barcelona</ciudad>
+</alumno>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<personas>
+   <nombre>Ana</nombre>
+   <nombre>Jose</nombre>
+   <nombre>Elena</nombre>
+</personas>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<receta_de_cocina>
+   <nombre>Tortilla de patatas</nombre>
+   <ingrediente>Huevo</ingrediente>
+   <ingrediente>Patata</ingrediente>
+   <ingrediente>Aceite</ingrediente>
+   <ingrediente>Sal</ingrediente>
+</receta_de_cocina>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<persona>
+   <nombre>Ana</nombre>
+   <mayor_de_edad/>
+</persona>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<articulo>
+   <codigo>JF-29</codigo>
+</articulo>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<articulos>
+   <codigo>JF-29</codigo>
+   <id>1234</id>
+   <codigo>JF-44</codigo>
+   <codigo>JF-79</codigo>
+</articulos>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<articulos>
+   <articulo>
+   <codigo>JF-29</codigo>
+      <nombre>Libreta</nombre>
+   </articulo>
+   <articulo>
+      <id>1234</id>
+      <nombre>Bolígrafo</nombre>
+   </articulo>
+</articulos>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<localidades>
+   <localidad>
+      <pais>España</pais>
+      <ciudad>León</ciudad>
+   </localidad>
+   <localidad>
+      <codigo_postal>24004</codigo_postal>
+   </localidad>
+</localidades>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<articulos>
+   <id>1234</id>
+   Escuadra
+   <codigo>JF-22</codigo>
+   <codigo>JF-33</codigo>
+   Cartabón
+   <id>5676</id>
+   <id>9876</id>
+</articulos>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<localidades>
+   <provincia>
+      León
+      <ciudad>Astorga</ciudad>
+      <codigo_postal>24124</codigo_postal>
+      <ciudad>Ponferrada</ciudad>
+   </provincia>
+   <provincia>
+      Asturias
+      <codigo_postal>03003</codigo_postal>
+   </provincia>
+</localidades>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<deportistas>
+   <f1 pais="Paises Bajos">Max Verstappen</f1>
+   <f1>Fernando Alonso</f1>
+   <tenis>Rafael Nadal</tenis>
+</deportistas>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<deportistas>
+   <f1 pais="Paises Bajos">Max Verstappen</f1>
+   <f1>Fernando Alonso</f1>
+   <tenis>Rafael Nadal</tenis>
+</deportistas>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ciudades>
+  <ciudad pais="Italia">Roma</ciudad>
+  <ciudad pais="Francia">París</ciudad>
+  <ciudad pais="Alemania">Berlín</ciudad>
+  <ciudad pais="">Viena</ciudad>
+</ciudades>
+
+------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<deportistas>
+   <f1 pais="NED">Max Verstappen</f1>
+   <f1>Fernando Alonso</f1>
+   <f1 pais="ESP">Carlos Sainz</f1>
+   <tenis>Rafael Nadal</tenis>
+</deportistas>

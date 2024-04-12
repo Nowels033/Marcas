@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE deportistas [
+    <!ELEMENT deportistas (f1 | tenis)*>
+    <!ELEMENT f1 (#PCDATA)>
+    <!ATTLIST f1 pais CDATA #FIXED "españa">
+    <!ATTLIST f1 nacimiento CDATA #REQUIRED>
+    <!ELEMENT tenis (#PCDATA)>
+    
+]>
+<deportistas>
+   <f1  nacimiento="jujuju">Max Verstappen</f1>
+   <f1 nacimiento="huhuuhuh"> Fernando Alonso</f1>
+   <tenis>Rafael Nadal</tenis>
+</deportistas>

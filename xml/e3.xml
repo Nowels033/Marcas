@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumno [
+    <!ELEMENT alumno (nombre,mayor_de_edad,ciudad)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT mayor_de_edad EMPTY>
+    <!ELEMENT ciudad (#PCDATA)>
+]>
+<alumno>
+   <nombre>Ana</nombre>
+   <mayor_de_edad/>
+   <ciudad>Madrid</ciudad>
+</alumno>
