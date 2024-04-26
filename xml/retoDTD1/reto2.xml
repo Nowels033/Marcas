@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura [
+<!ELEMENT factura (emisor, cliente, detalle, importeTotal)>
+<!ELEMENT emisor (nombre, cif,telefono)>
+<!ELEMENT cliente (nombre, cif, telefono)>
+<!ELEMENT detalle (articulo*)>
+<!ELEMENT articulo ( tipo?, descripcion, cantidad, oferta?)>
+<!ATTLIST articulo
+  codigo CDATA #REQUIRED
+  tipo (Libro|DVD|Varios) #IMPLIED
+  importe CDATA #REQUIRED>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT oferta EMPTY>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT importeTotal (#PCDATA)>
+]>
+<factura>
+  <emisor>
+    <nombre>Librería Pérez</nombre>
+    <cif>44555666B</cif>
+    <telefono>333999444</telefono>
+  </emisor>
+  <cliente>
+    <nombre>Biblioteca Txantrea</nombre>
+    <cif>33111222A</cif>
+    <telefono>777888999</telefono>
+   
+  </cliente>
+  <detalle>
+    <articulo codigo="AW7" tipo="Libro" importe="25">
+      <descripcion>Analítica Web 2.0</descripcion>
+      <cantidad>1</cantidad>
+      <oferta/>
+    </articulo>
+    <articulo codigo="CP5" tipo="DVD" importe="30">
+      <descripcion>Curso de HTML</descripcion>
+      <cantidad>2</cantidad>
+    </articulo>
+  </detalle>
+  <importeTotal>85</importeTotal>
+</factura>
