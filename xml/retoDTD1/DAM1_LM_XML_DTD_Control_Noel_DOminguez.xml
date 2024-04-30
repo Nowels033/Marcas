@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura [ 
+<!ELEMENT factura (fechaPedido,Cliente,producto+)>
+<!ELEMENT fechaPedido (#PCDATA)>
+<!ELEMENT Cliente (nombre,apellidos,id,direccionDefacturacion,direccionDeEnvio)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT direccionDefacturacion (calleFacturacion,numeroFacturacion,codigoPostalFacuracion)>
+<!ELEMENT calleFacturacion (#PCDATA)>
+<!ELEMENT numeroFacturacion (#PCDATA)>
+<!ELEMENT codigoPostalFacuracion (#PCDATA)>
+<!ELEMENT direccionDeEnvio (nombreEnvio,apellidosEnvio,calleEnvio,numeroEnvio,codigoPostalEnvio)>
+<!ELEMENT nombreEnvio (#PCDATA)>
+<!ELEMENT apellidosEnvio (#PCDATA)>
+<!ELEMENT calleEnvio (#PCDATA)>
+<!ELEMENT numeroEnvio (#PCDATA)>
+<!ELEMENT codigoPostalEnvio (#PCDATA)>
+<!ELEMENT producto (nombreProducto,precio,cantidad,oferta?)>
+<!ELEMENT nombreProducto (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT oferta EMPTY>
+<!ATTLIST producto codigo CDATA #REQUIRED
+ modelo (electrica|gasolina|noSeSabe) #IMPLIED>
+
+
+
+]>
+<factura>
+
+    <fechaPedido>30 de abril de 2024</fechaPedido>
+    <Cliente>
+        <nombre>Jose</nombre>
+        <apellidos>Garcia</apellidos>
+        <id>cliente01</id>
+        <direccionDefacturacion>
+            <calleFacturacion>Calle Jaime el conquistador</calleFacturacion>
+            <numeroFacturacion>16</numeroFacturacion>
+            <codigoPostalFacuracion>28045</codigoPostalFacuracion>
+        </direccionDefacturacion>
+        <direccionDeEnvio>
+            <nombreEnvio>Elena</nombreEnvio>
+            <apellidosEnvio>Pérez</apellidosEnvio>
+            <calleEnvio>Calle Monasterio</calleEnvio>
+            <numeroEnvio>23</numeroEnvio>
+            <codigoPostalEnvio>24004</codigoPostalEnvio>
+        </direccionDeEnvio>
+
+    </Cliente>
+    <producto codigo="434-GJ" modelo="noSeSabe">
+        <nombreProducto>Cortadora</nombreProducto>
+        <precio>189,76€</precio>
+        <cantidad>1</cantidad>
+        <oferta/>
+
+    </producto>
+    <producto codigo="957-DE">
+        <nombreProducto>Podadora de setos</nombreProducto>
+        <precio>11,34€</precio>
+        <cantidad>2</cantidad>
+        
+        
+        
+    </producto>
+
+</factura>
