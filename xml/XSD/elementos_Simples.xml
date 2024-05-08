@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementos_simples xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="elementos_simples.xsd">
+  <ciudad>A Coruña</ciudad>
+  <fecha>2002</fecha>
+  <hora>18:29:45</hora>
+  <nota>7.5</nota>
+  <apto>true</apto>
+  <curso grupo="B">2</curso>
+</elementos_simples>
