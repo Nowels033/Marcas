@@ -11,7 +11,7 @@
                         <xs:element name="expresion1" >
                             <xs:simpleType >
                                 <xs:restriction base="xs:string">
-                                    <xs:pattern value=/>
+                                    <xs:pattern value=""></xs:pattern>
 
                                 </xs:restriction>
 
