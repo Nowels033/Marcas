@@ -6,4 +6,13 @@
   <nota>7.5</nota>
   <apto>true</apto>
   <curso grupo="B">2</curso>
+  <mes>7</mes>
+  <precios>
+    <precio>8</precio>
+    <precio>2.6</precio>
+    <precio>4.95</precio>
+    <precio>187</precio>
+ </precios>
+ <color>ambar</color>
+ <letra>4444</letra>
 </elementos_simples>

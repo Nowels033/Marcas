@@ -4,7 +4,19 @@
     <xs:element name="elementos_simples">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="ciudad" type="xs:string"/>
+                <xs:element name="ciudad" default="Madrid">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                   <!--  <xs:length value="10"></xs:length>-->    
+                   <xs:minLength value="5"/>  
+                   <xs:maxLength value="15"/>
+                   <xs:pattern value="([a-zA-Z ])+"></xs:pattern>
+
+
+                        </xs:restriction>
+                        
+                    </xs:simpleType>
+                </xs:element>
                 <xs:element name="fecha" type="xs:integer"/>
                 <xs:element name="hora" type="xs:time"/>
                 <xs:element name="nota" type="xs:decimal"/>
@@ -19,7 +31,47 @@
 
                     </xs:complexType>
                 </xs:element>
+                <xs:element name="mes" type="numMes"/>
+                <xs:element name="precios">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="precio" maxOccurs="unbounded">
+                              <xs:simpleType>
+                                <xs:restriction base="xs:decimal">
+                                    <xs:totalDigits value="3"/>
+                                    <xs:fractionDigits value="2"/>
+                                </xs:restriction>
+                              </xs:simpleType>  
+                            </xs:element> 
+                            
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="color">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="rojo"/>
+                            <xs:enumeration value="verde"/>
+                            <xs:enumeration value="ambar"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+               <xs:element name="letra">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="\d{2,4}"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+               </xs:element>   
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+                                <xs:simpleType name="numMes">
+                                        <xs:restriction base="xs:integer">
+                                            <xs:minExclusive value="0"/>
+                                            <xs:maxExclusive value="13"/>
+                                        </xs:restriction>
+                             </xs:simpleType>
+
+
 </xs:schema>
