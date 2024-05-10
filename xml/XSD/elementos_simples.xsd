@@ -7,10 +7,12 @@
                 <xs:element name="ciudad" default="Madrid">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
+                            <xs:whiteSpace value="collapse"/>
                    <!--  <xs:length value="10"></xs:length>-->    
                    <xs:minLength value="5"/>  
                    <xs:maxLength value="15"/>
-                   <xs:pattern value="([a-zA-Z ])+"></xs:pattern>
+                   <xs:pattern value="([a-zA-Z])+"></xs:pattern>
+                  
 
 
                         </xs:restriction>

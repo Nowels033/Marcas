@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<puertas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ventanas.xsd">
+    <puertaCerrada></puertaCerrada>
+    <puertaAbierta>true</puertaAbierta>
+
+</puertas>
