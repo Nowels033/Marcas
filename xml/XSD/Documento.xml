@@ -1,0 +1,73 @@
+<!-- XSELEMENT: Se declara como por ejemplo el inicio de una parte del documento 
+
+Como por ejemplo <xs:element name="Ingredientes"> es decir que ahora se debe indicar si es simple o complejo, 
+
+En este caso complejo y debe llevar una secuencia <xs:complexType> 
+<xs:sequence> 
+<xs:element ref="Ingrediente" maxOccurs="unbounded"/> 
+</xs:sequence> 
+</xs:complexType> 
+
+En este caso, tiene una secuencia de ingrediente y que puede estar de manera ilimitada, se cierra la etiqueta de secuencia y luego la del elemento ingredientes, se define un elemento de nombre Instrucciones, que debe ir acompañado de su tipo y de su secuencia si lo amerita 
+
+<xs:element name="Instrucciones"> 
+<xs:complexType> 
+<xs:sequence> 
+<xs:element ref="Paso" maxOccurs="unbounded" minOccurs="1"/> 
+</xs:sequence> 
+</xs:complexType> 
+
+<xs:simpleType> 
+<xs:restriction base="xs:string"> 
+<xs:whiteSpace value="preserve"/> 
+</xs:restriction> 
+</xs:simpleType> 
+</xs:element> 
+nos permite definir un elemento domicilio donde especificamos al procesador de XML que no deseamos que 
+elimine ningún espacio en blanco. Por otro lado, la siguiente definición: 
+<xs:element name="domicilio"> 
+<xs:simpleType> 
+<xs:restriction base="xs:string"> 
+<xs:whiteSpace value="replace"/> 
+</xs:restriction> 
+</xs:simpleType> 
+</xs:element> 
+especifica al procesador de XML que deseamos que sustituya los caracteres blancos (tabuladores, saltos de 
+línea, etc.) por espacios. Disponemos también de collapse, que reemplazará los caracteres 
+blancos por espacios en blanco, pero que además reducirá múltiples espacios en blanco consecutivos a uno 
+solo y los caracteres al inicio de línea o al final de línea a uno solo. 
+
+El elemento idioma contiene un atributo y elementos descendientes: 
+<libro idioma="inglés"> 
+<titulo>The Hobbit</titulo> 
+<autor>J. R. R. Tolkien</autor> 
+<editorial>Allen and Unwin</editorial> 
+</libro> 
+Su definición tan solo consiste en declararlo como tipo complejo (al tener descendientes) y añadir los 
+atributos correspondientes: 
+<xs:element name="idioma"> 
+<xs:complexType> 
+<xs:sequence> 
+<xs:element name="titulo" type="xs:string"/> 
+<xs:element name="autor" type="xs:string"/> 
+<xs:element name="editorial" type="xs:string"/> 
+</xs:sequence> 
+<xs:attribute name="idioma" type="xs:string"/> 
+</xs:complexType> 
+</xs:element> 
+vi. Definición de tipos que contienen texto, atributos y elementos descendientes 
+Finalmente estudiamos el caso más completo: 
+<expedicion numero="32"> 
+Llegamos al Chaltén en la Patagonia el 
+<fecha>22.08.2003</fecha> ... 
+</expedicion> 
+Como se combina contenido textual con descendientes hay que declarar el tipo complejo como mixto, y 
+añadir los atributos: 
+<xs:element name="expedicion"> 
+<xs:complexType mixed="true"> 
+<xs:sequence> 
+<xs:element name="fecha" type="xs:string"/> 
+</xs:sequence> 
+<xs:attribute name="numero" type="xs:integer"/> 
+</xs:complexType> 
+</xs:element> -->

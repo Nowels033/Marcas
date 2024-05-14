@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición de tipos de datos con restricciones -->
+
+  <!-- 
+    Tipo de dato 'CustomString' que representa una cadena con longitud 
+    entre 5 y 10 caracteres y que puede contener letras y números.
+    Además, se agregan más patrones para mayor variedad.
+
+    La definición de Schema XML (XSD) es un lenguaje de definición utilizado para describir la estructura y
+     las restricciones de los datos en un documento XML. XSD proporciona un medio para especificar 
+    la estructura de los elementos y atributos en un documento XML, así como las relaciones entre ellos.
+
+    XSD significa "XML Schema Definition" (Definición de Esquema XML).
+  -->
+
+  <xs:simpleType name="CustomString">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="5"/>
+      <xs:maxLength value="10"/>
+      <!-- Patrón original -->
+      <xs:pattern value="[a-zA-Z0-9]*"/>
+      <!-- Patrones adicionales -->
+      <!-- Patrón que permite cualquier carácter -->
+      <xs:pattern value=".*"/>
+      <!-- Patrón que permite cualquier letra -->
+      <xs:pattern value="[a-zA-Z]*"/>
+      <!-- Patrón que permite cualquier dígito -->
+      <xs:pattern value="\d*"/>
+      <!-- Patrón que permite cualquier carácter de espaciado (espacio, tabulador...) -->
+      <xs:pattern value="\s*"/>
+      <!-- Patrón que requiere n dígitos -->
+      <xs:pattern value="\d{5}"/>
+      <!-- Patrón que requiere entre n y m dígitos -->
+      <xs:pattern value="\d{3,5}"/>
+      <!-- Patrón que requiere n o más dígitos -->
+      <xs:pattern value="\d{3,}"/>
+      <!-- Patrón que permite uno de los caracteres (a, b o c) -->
+      <xs:pattern value="[abc]"/>
+      <!-- Patrón que permite solo letras mayúsculas -->
+      <xs:pattern value="[A-Z]"/>
+      <!-- Patrón que permite uno de los caracteres del rango (de la M a la Z, excepto la P) -->
+      <xs:pattern value="[M-Z-[P]]"/>
+      <!-- Patrón que permite uno u otro carácter -->
+      <xs:pattern value="(a|b)"/>
+      <!-- Patrón que permite la aparición o no de "pepe" -->
+      <xs:pattern value="pepe?"/>
+      <!-- Patrón que permite la aparición de "pepe" 0 o más veces -->
+      <xs:pattern value="pepe*"/>
+      <!-- Patrón que permite la aparición de "pepe" 1 o más veces -->
+      <xs:pattern value="pepe+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- 
+    Tipo de dato 'StatusType' que representa un estado que solo puede 
+    ser 'Active', 'Inactive' o 'Pending'.
+  -->
+  <xs:simpleType name="StatusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Active"/>
+      <xs:enumeration value="Inactive"/>
+      <xs:enumeration value="Pending"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- 
+    Tipo de dato 'AgeType' que representa una edad entre 0 y 120.
+  -->
+  <xs:simpleType name="AgeType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="120"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición de elementos utilizando los tipos de datos definidos -->
+
+  <!-- 
+    Elemento 'Name' que utiliza el tipo de dato 'CustomString' 
+    para representar el nombre de longitud entre 5 y 10 caracteres 
+    y que puede contener letras y números.
+  -->
+  <xs:element name="Name" type="CustomString"/>
+
+  <!-- 
+    Elemento 'Status' que utiliza el tipo de dato 'StatusType' 
+    para representar el estado, el cual solo puede ser 'Active', 
+    'Inactive' o 'Pending'.
+  -->
+  <xs:element name="Status" type="StatusType"/>
+
+  <!-- 
+    Elemento 'Age' que utiliza el tipo de dato 'AgeType' 
+    para representar la edad, la cual debe estar entre 0 y 120.
+  -->
+  <xs:element name="Age" type="AgeType"/>
+
+</xs:schema>

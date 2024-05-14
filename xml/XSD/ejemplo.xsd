@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición del elemento principal: Librería -->
+  <xs:element name="Libreria">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Elemento para cada libro -->
+        <xs:element name="Libro" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- Elementos para los atributos del libro -->
+              <xs:element name="Titulo">
+                <!-- Restricción para longitud máxima de 100 caracteres -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Autor">
+                <!-- Restricción para longitud máxima de 50 caracteres -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Año">
+                <!-- Restricción para el año: entre 1000 y 9999 -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:gYear">
+                    <xs:minInclusive value="1000"/>
+                    <xs:maxInclusive value="9999"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Editorial">
+                <!-- Restricción para longitud máxima de 100 caracteres -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Precio">
+                <!-- Restricción para que el precio sea un número decimal positivo -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:decimal">
+                    <xs:minInclusive value="0"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descripcion" minOccurs="0">
+                <!-- Restricción para longitud máxima de 500 caracteres -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Categoria">
+                <!-- Restricción para que la categoría sea una de las enumeradas -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Ficción"/>
+                    <xs:enumeration value="No Ficción"/>
+                    <xs:enumeration value="Fantasía"/>
+                    <xs:enumeration value="Ciencia Ficción"/>
+                    <xs:enumeration value="Misterio"/>
+                    <xs:enumeration value="Romance"/>
+                    <xs:enumeration value="Aventura"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Idioma">
+                <!-- Restricción para que el idioma sea una de las enumeradas -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Español"/>
+                    <xs:enumeration value="Inglés"/>
+                    <xs:enumeration value="Francés"/>
+                    <xs:enumeration value="Alemán"/>
+                    <xs:enumeration value="Italiano"/>
+                    <xs:enumeration value="Portugués"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Formato">
+                <!-- Restricción para que el formato sea una de las enumeradas -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Físico"/>
+                    <xs:enumeration value="Digital"/>
+                    <xs:enumeration value="Ambos"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumeroPaginas" minOccurs="0">
+                <!-- Restricción para que el número de páginas sea un entero positivo -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:positiveInteger"/>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PesoGramos" minOccurs="0">
+                <!-- Restricción para que el peso en gramos sea un número decimal positivo -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:decimal">
+                    <xs:minInclusive value="0"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISBN10" minOccurs="0">
+                <!-- Restricción para que el ISBN de 10 dígitos siga un patrón específico -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="\d{10}"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+            <!-- Atributo ISBN: longitud exacta de 13 caracteres -->
+            <xs:attribute name="ISBN">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:length value="13"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <!-- Restricción para que haya al menos un libro en la librería -->
+      <xs:assert test="count(Libro) &gt; 0"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
