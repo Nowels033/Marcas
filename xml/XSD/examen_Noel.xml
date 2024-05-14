@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculumVitae xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="DAM1_LM_XSD_Control_Noel_Dominguez.xsd">
+
+        <datosPersonales nif="05943232D">
+
+                <nombre>Noel</nombre>
+                <apellidos>Dominguez Serrano</apellidos>
+                <fechaNacimiento>1992-03-04</fechaNacimiento>
+                <lugarDeNacimiento>Madrid</lugarDeNacimiento>
+                <nacionalidad>Española</nacionalidad>
+               <foto>C:\dir1\foto.jpg</foto>
+
+        </datosPersonales>
+
+        <datosContacto>
+
+            <tipoDeVia>C/</tipoDeVia>
+            <nombreDeVia>velez blanco</nombreDeVia>
+            <numero>12</numero>
+            <portal>a</portal>
+            <codigoPostal>28001</codigoPostal>
+            <pais>España</pais>
+            <correoElectronico>noeldomse@gmail.com</correoElectronico>
+            <telefono>601032472</telefono>
+            <telefono>619818665</telefono>
+
+        </datosContacto>
+
+        <formacion  fechaInicio ="2012-03-04" fechaFin ="2015-03-04">
+            <nombreFormacion>S.M.R</nombreFormacion>
+            <centro>I.E.S CLARA DEL REY</centro>
+        </formacion>
+        <formacion fechaInicio ="2008-03-04" fechaFin ="2012-03-02">
+            <nombreFormacion >E.S.O</nombreFormacion>
+            <centro>I.E.S Arturo Soria</centro>
+        </formacion>
+        
+        <idioma materno="si" nivel="alto">
+                <nombreIdioma>Español</nombreIdioma>
+
+        </idioma>
+
+        <idioma materno="no" nivel="bajo">
+                <nombreIdioma>Ingles</nombreIdioma>
+        </idioma>
+
+        <experienciaLaboral fechaInicioEmpresa="2018-03-04" fechaFinEmpresa="2023-03-04">
+            <empresa>Sermicro</empresa>
+            <puesto>tecnico</puesto>
+        </experienciaLaboral>
+
+        <experienciaLaboral fechaInicioEmpresa="2023-03-05" fechaFinEmpresa="2024-03-04">
+            <empresa>Comsa</empresa>
+            <puesto>tecnico</puesto>
+        </experienciaLaboral>
+
+        <datosOpcionales>
+                <aficion>Leer</aficion>
+                <aficion>Estudiar</aficion>
+                <aficion>Cantar</aficion>
+                <aficion>Dibujar</aficion>
+                <tipoDeCarnet>B</tipoDeCarnet>
+                <disponilidadViajar />
+
+        </datosOpcionales>
+
+
+
+
+</curriculumVitae >

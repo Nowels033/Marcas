@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="curriculumVitae">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="datosPersonales">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="apellidos" type="xs:string"/>
+                        <xs:element name="fechaNacimiento" type="xs:date"/>
+                        <xs:element name="lugarDeNacimiento" type="xs:string" />
+                        <xs:element name="nacionalidad" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+                        <xs:element name="foto" type="xs:string" />
+                        
+                    </xs:sequence>
+                    
+                    <xs:attribute name="nif">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:pattern value="[A-Z]{1}[0-9]{7}[A-Z]{1}" />
+                                <xs:pattern value="[0-9]{8}[A-Z]{1}" />
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="datosContacto">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="tipoDeVia" type="xs:string" />
+                        <xs:element name="nombreDeVia" type="xs:string" />
+                        <xs:element name="numero" type="xs:integer" minOccurs="0" />
+                        <xs:element name="portal" type="xs:string" minOccurs="0" />
+                        <xs:element name="codigoPostal">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:positiveInteger">
+                                    <xs:pattern value="[0-9]{5}" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="pais" type="xs:string" />
+                        <xs:element name="correoElectronico" type="xs:string" />
+                        <xs:element name="telefono" minOccurs="0" maxOccurs="2">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:positiveInteger">
+                                    <xs:pattern value="[0-9]{9}" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="formacion" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombreFormacion" type="xs:string" />
+                        <xs:element name="centro" type="xs:string"></xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="fechaInicio" type="xs:date"></xs:attribute>
+                    <xs:attribute name="fechaFin" type="xs:date"></xs:attribute>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="idioma" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombreIdioma"></xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="materno" >
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="si"></xs:enumeration>
+                                <xs:enumeration value="no"></xs:enumeration>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="nivel">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="alto"></xs:enumeration>
+                                <xs:enumeration value="medio"></xs:enumeration>
+                                <xs:enumeration value="bajo"></xs:enumeration>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="experienciaLaboral" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="empresa"></xs:element>
+                        <xs:element name="puesto"></xs:element>    
+                    </xs:sequence>
+                    <xs:attribute name="fechaInicioEmpresa" type="xs:date"></xs:attribute>
+                    <xs:attribute name="fechaFinEmpresa" type="xs:date"></xs:attribute>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="datosOpcionales" >
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="aficion" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                        <xs:element name="tipoDeCarnet" minOccurs="0" maxOccurs="unbounded">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="AM"></xs:enumeration>
+                                    <xs:enumeration value="A1"></xs:enumeration>
+                                    <xs:enumeration value="A2"></xs:enumeration>
+                                    <xs:enumeration value="A"></xs:enumeration>
+                                    <xs:enumeration value="B"></xs:enumeration>
+                                    <xs:enumeration value="C"></xs:enumeration>
+                                    <xs:enumeration value="D"></xs:enumeration>
+                                    <xs:enumeration value="E"></xs:enumeration>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="disponilidadViajar" minOccurs="0" maxOccurs="1"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:element>
+
+
+</xs:schema>
