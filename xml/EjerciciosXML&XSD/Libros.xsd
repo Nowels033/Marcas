@@ -1,0 +1,16 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- Definición del elemento "libro" con atributos -->
+  <xs:element name="libro">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Definición de elementos opcionales -->
+        <xs:element name="titulo" type="xs:string"/>
+        <xs:element name="autor" type="xs:string"/>
+        <xs:element name="editorial" type="xs:string"/>
+      </xs:sequence>
+      <!-- Definición de atributos para el elemento "libro" -->
+      <xs:attribute name="id" type="xs:positiveInteger"/>
+      <xs:attribute name="fechaPublicacion" type="xs:date"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,38 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="contabilidad">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:element type="xs:ingreso" name="ingreso"/>
+                    <xs:element type="xs:gasto" name="gasto"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="fecha">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="cantidad">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="concepto">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:complexType name="ingreso">
+        <xs:sequence>
+            <xs:element type="fecha" name="fecha"/>
+            <xs:element type="cantidad" name="cantidad"/>
+            <xs:element type="concepto" name="concepto"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="gasto">
+        <xs:sequence>
+            <xs:element type="fecha" name="fecha"/>
+            <xs:element type="cantidad" name="cantidad"/>
+            <xs:element type="concepto" name="concepto"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- <!DOCTYPE libreria [ 
+<!ELEMENT libreria (libro)*>
+<!ELEMENT libro (año,categoria,titulo,autor?,precio)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT categoria (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT precio (euros|dolares)>
+<!ELEMENT euros EMPTY>
+<!ELEMENT dolares EMPTY>
+<!ATTLIST precio cantidad CDATA #REQUIRED>
+]> -->
+
+
+<libreria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="DAM1_LM_Final3_Noel_Dominguez.xsd">
+    <libro>
+        <año>1600</año>
+        <categoria>Ficcion</categoria>
+        <titulo>El señor de los anillos</titulo>
+        <autor>J.K</autor>
+        <precio cantidad="99.9">
+            <euros/>    
+
+        </precio>
+
+    </libro>
+
+    <libro>
+        <año>2000</año>
+        <categoria>Ficcion</categoria>
+        <titulo>Star wars</titulo>
+        <autor>George Lucas</autor>
+        <precio cantidad="100">
+            <dolares/>
+        </precio>
+    </libro>
+
+    <libro>
+        <año>2010</año>
+        <categoria>No Ficcion</categoria>
+        <titulo>El arte de la guerra</titulo>
+        <autor>Carl Von </autor>
+        <precio cantidad="99"> 
+            <euros />   
+        </precio>
+    </libro>
+
+    <libro>
+        <año>2010</año>
+        <categoria>No Ficcion</categoria>
+        <titulo>El arte de la guerra II</titulo>
+        <autor>Carl Von </autor>
+        <precio cantidad="100">
+            <dolares/>
+        </precio>
+    </libro>
+
+  
+
+</libreria>

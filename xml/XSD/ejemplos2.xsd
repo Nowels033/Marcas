@@ -15,6 +15,11 @@
     XSD significa "XML Schema Definition" (Definición de Esquema XML).
   -->
 
+  pero no te deja ver eso en la teoria
+
+  pero la diferencia con el dtd, esque se pueden añadir muchas mas restricciones no tiene mas ,los dos estan en XML?
+el dtd no esta definido en xml y el xsd si
+
   <xs:simpleType name="CustomString">
     <xs:restriction base="xs:string">
       <xs:minLength value="5"/>
