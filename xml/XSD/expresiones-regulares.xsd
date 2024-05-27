@@ -11,10 +11,57 @@
                         <xs:element name="expresion1" >
                             <xs:simpleType >
                                 <xs:restriction base="xs:string">
-                                    <xs:pattern value=""></xs:pattern>
-
+                                    <xs:pattern value="[a-zA-Z0-9\s]+"/>
                                 </xs:restriction>
-
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="expresion2" >
+                            <xs:simpleType >
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[a-zA-Z0-9\s]+"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="expresion3" >
+                            <xs:simpleType >
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[a-zA-Z0-9\s]+"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="expresion4" >
+                            <xs:simpleType >
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[a-zA-Z0-9\s]+"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="expresion5" >
+                            <xs:simpleType >
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[a-zA-Z0-9\s]+"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="expresion6" >
+                            <xs:simpleType >
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[a-zA-Z0-9\s]+"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="expresion7" >
+                            <xs:simpleType >
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[a-zA-Z0-9\s]+"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="expresion8" >
+                            <xs:simpleType >
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[a-zA-Z0-9\s]+"/>
+                                </xs:restriction>
                             </xs:simpleType>
                         </xs:element>
                     </xs:sequence>
